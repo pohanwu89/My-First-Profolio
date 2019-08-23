@@ -11,14 +11,14 @@ function App() {
       <Layout>
         <Header className="header-color" title="Profolio" scroll>
           <Navigation>
-            <Link to="/">About Me</Link>
+            <Link to="/">Home</Link>
             <Link to="/projects">Projects</Link>
             <Link to="/contact">Contact</Link>
           </Navigation>
         </Header>
         <Drawer title="Profolio">
           <Navigation>
-            <Link to="/">About Me</Link>
+            <Link to="/">Home</Link>
             <Link to="/projects">Projects</Link>
             <Link to="/contact">Contact</Link>
           </Navigation>
