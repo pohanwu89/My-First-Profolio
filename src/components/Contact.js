@@ -10,34 +10,23 @@ class Contact extends Component {
             <h2>Po Han Wu</h2>
             <img src="https://icon-library.net//images/male-avatar-icon/male-avatar-icon-29.jpg" alt="avatar" style={{ height: '250px' }} />
             <p style={{ width: '75%', margin: 'auto', paddingTop: '1em' }}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenan convallis.To embed your selected fonts into a webpage, copy this code into the of your HTML document.
+              Self-taught JavaScript developer, passionate about the web development and looking to join a team of like-minded people in an environment that promotes teamwork and fosters personal and professional growth.
             </p>
           </Cell>
-          <Cell col={6}>
+          <Cell col={6} className="contact-list">
             <h2>Contact Me</h2>
             <hr />
-            <div className="contact-list">
-              <List>
-                <ListItem>
-                  <ListItemContent style={{ fontSize: '25px', fontFamily: 'Anton' }} >
-                    <i className="fa fa-phone-square" aria-hidden="true" />
-                    (123)5674901-302-322
-                  </ListItemContent>
-                </ListItem>
-                <ListItem>
-                  <ListItemContent style={{ fontSize: '25px', fontFamily: 'Anton' }} >
-                    <i className="fa fa-envelope" aria-hidden="true" />
-                    hankwu0930@gmail.com
-                  </ListItemContent>
-                </ListItem>
-                <ListItem>
-                  <ListItemContent style={{ fontSize: '25px', fontFamily: 'Anton' }} >
-                    <i className="fa fa-skype" aria-hidden="true" />
-                    hank7xx9
-                  </ListItemContent>
-                </ListItem>
-              </List>
-            </div>
+            <List>
+              <ListItem>
+                <ListItemContent icon="phone">+81 07033085678</ListItemContent>
+              </ListItem>
+              <ListItem>
+                <ListItemContent icon="mail">hankwu0930@gmail.com</ListItemContent>
+              </ListItem>
+              <ListItem>
+                <ListItemContent icon="message">hank7xx9(skype)</ListItemContent>
+              </ListItem>
+            </List>
 
 
           </Cell>

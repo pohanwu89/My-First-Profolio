@@ -5,7 +5,7 @@ import '../App.css'
 class LandingPage extends Component {
   render() {
     return (
-      <div style={{ width: '100%', margin: 'auto' }}>
+      <div style={{ width: '100%', marginTop: 'auto' }}>
         <Grid className="landing-grid">
           <Cell col={12}>
             <img
@@ -31,6 +31,25 @@ class LandingPage extends Component {
             </div>
           </Cell>
         </Grid>
+
+        {/* <Grid className="landing-grid">
+          <Cell col={12}>
+          introA
+          </Cell>
+        </Grid>
+       
+        <Grid className="landing-grid">
+          <Cell col={12}>
+            introB
+            <div></div>
+          </Cell>
+        </Grid>
+      
+        <Grid className="landing-grid">
+          <Cell col={12}>
+            introC
+          </Cell>
+        </Grid> */}
       </div>
     )
   }

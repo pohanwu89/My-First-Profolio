@@ -8,39 +8,43 @@ class ReactProjects extends Component {
   state = {
     projects: [
       {
-        title: 'a',
-        text: '1234',
+        title: 'Robot Friends',
+        text: 'My first React app that lets users filter robots by name.',
         img: 'https://miro.medium.com/max/1200/1*y6C4nSvy2Woe0m7bWEn4BA.png',
-        githubUrl: 'http:google.com'
+        githubUrl: 'https://github.com/pohanwu89/robotfriends'
       },
       {
-        title: 'b',
-        text: 'b1234',
+        title: 'Smart Brain',
+        text: 'A  full stack web application that detects faces from an input image URL.',
         img: 'https://miro.medium.com/max/1200/1*y6C4nSvy2Woe0m7bWEn4BA.png',
-        githubUrl: 'http:google.com'
+        githubUrl: 'https://github.com/pohanwu89/smart-brain-react'
       },
       {
-        title: 'c',
-        text: 'c1234',
+        title: 'Burger Builder',
+        text: 'A web application designed using React. It allows users to sign-up and order burgers.',
         img: 'https://miro.medium.com/max/1200/1*y6C4nSvy2Woe0m7bWEn4BA.png',
-        githubUrl: 'http:google.com'
+        githubUrl: 'https://github.com/pohanwu89/Burger-Builder'
       }
     ]
   }
   render() {
+
     return (
-      <div>
-        <div className="projects-grid">
-          <CardArea
-            project={this.state.projects[0]} />
+      <div className="app-card-list" >
 
-          <CardArea
-            project={this.state.projects[1]} />
+        {this.state.projects.map((project) => {
+          return (
+            <div className="card-container">
+              <CardArea
+                project={project}
+                url={project.img}
+                github={project.githubUrl} />
+            </div>
 
-          <CardArea
-            project={this.state.projects[2]} />
-        </div>
-      </div>
+          )
+        })}
+
+      </div >
     )
   }
 
